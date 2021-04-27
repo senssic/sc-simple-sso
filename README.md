@@ -78,9 +78,10 @@ sc:
 
 
 ## 单点登录流程
-
+![单点登录流程](https://github.com/Senssic/sc-simple-sso/blob/main/%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95a.png)
 
 ## 单点退出流程
+![单点退出流程](https://github.com/Senssic/sc-simple-sso/blob/main/%E5%8D%95%E7%82%B9%E7%99%BB%E5%87%BA.png)
 
 
 ## 呜谢
