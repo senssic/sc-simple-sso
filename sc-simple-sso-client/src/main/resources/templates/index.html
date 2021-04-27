@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>simple-sso-client</title>
+</head>
+<body>
+<h2>simple-sso-client</h2>
+<b>登录用户名</b>：[[${userName}]]<br/>
+<b>端口</b>：[[${serverPort}]]<br/>
+<b>sessionId</b>：[[${sessionId}]]<br/>
+<br/><a th:href="${logoutUrl}">单点退出</a>
+</body>
+</html>

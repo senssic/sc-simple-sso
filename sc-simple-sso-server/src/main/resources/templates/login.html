@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>simple-sso</title>
+    <style>
+        body {text-align: center;}
+    </style>
+</head>
+<body>
+<form th:action="@{/login}" method="post">
+    <input type="hidden" name="redirectUri" th:value="${redirectUri}"  />
+    <input type="hidden" name="appId" th:value="${appId}" />
+    <div>
+        <!--/*@thymesVar id="error" type=""*/-->
+        <span id="basic-addon0">&nbsp;</span>
+        <span style="font-size: 12px;color: red" th:text="${error}" aria-describedby="basic-addon0"></span>
+        <br />
+    </div>
+    <div>
+        <span id="basic-addon1">@</span>
+        <input id="user_name" name="username" type="text" placeholder="用户名" aria-describedby="basic-addon1" />
+
+    </div>
+    <br />
+    <div>
+        <span id="basic-addon2">@</span>
+        <input id="password" name="password" type="password" placeholder="密码" aria-describedby="basic-addon2" />
+    </div>
+    <br />
+    <button type="submit" style="width:190px;">登 录</button>
+
+</form>
+</body>
+</html>

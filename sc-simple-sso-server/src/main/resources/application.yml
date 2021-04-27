@@ -1,0 +1,28 @@
+server:
+  port: 8081
+spring:
+  redis:
+    host: 10.20.38.64
+    password: ''
+    port: 6379
+
+sc:
+  sso:
+    app-id: service1
+    app-secret: 123456
+    serverUrl: http://10.20.38.64:8081
+    timeout: 7200
+    enabled: true
+    white-url-list:
+      - /login
+      - /logout
+      - /sso/*
+      - /favicon.ico
+    appInfoList:
+      - name: service1
+        appId: service1
+        appSecret: 123456
+      - name: client1
+        appId: client1
+        appSecret: 123456
+
